@@ -72,3 +72,4 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/t
 
 npx create-react-app ./
 npm i body-parser cors mongoose nodemon
+npm i axios moment react-file-base64 redux redux-thunk

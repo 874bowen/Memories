@@ -2,8 +2,8 @@ import React from 'react';
 
 const Navbar = () => {
    return (
-      <div className="fixed my-3 w-[80%] h-20">
-			<div className="shadow-lg hover:shadow-[#d296d4] rounded-xl flex justify-center items-center h-full">
+      <div className="fixed w-[80%] h-20 shadow-xl">
+			<div className="shadow-lg hover:shadow-[#a8e2e7] rounded-xl flex justify-center items-center h-full">
 				{/* <image
 					src={logo}
 					alt="/"

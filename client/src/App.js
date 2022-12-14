@@ -15,15 +15,12 @@ const App = () => {
 
 
    return (
-      <div className='w-full flex justify-center items-center'>
-         <div className='items-center w-[80%] '>
-         <Navbar />
-         <div className='mt-5 py-20'>
-            <div className='mt-5 grid md:grid-cols-3'>
-            <div className='col-span-2'><Posts /></div>
-            <Form />
-            </div>
-         </div>
+      <div className=''>
+
+         <div className="grid h-[100px] place-items-center"><Navbar /></div>
+         <div className='w-[80%] mt-3 m-auto md:grid grid-cols-3 gap-3'>
+            <div className="col-span-2"><Posts /></div>
+            <div className=''><Form /></div>
          </div>
       </div>
    );

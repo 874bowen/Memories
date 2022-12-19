@@ -28,6 +28,6 @@
 	}
 
 	button {
-		@apply rounded-sm uppercase bg-[#efd4e7]  text-[#1f2937] p-2;
+		@apply rounded-sm uppercase bg-[#FDF5DF]  text-[#1f2937] p-2;
 	}
 }

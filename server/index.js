@@ -16,7 +16,14 @@ const CONNECTION_URL = process.env.CONNECTION_URL;
 const PORT = process.env.PORT || 5000;
 
 mongoose.connect(CONNECTION_URL, { useNewUrlParser: true, useUnifiedTopology: true })
-   .then(() => PORT, app.listen(PORT, () => console.log(`Server running on port: ${PORT}`)))
+   .then(() => PORT, app.listen(PORT, () => {
+      console.log(`Server running on port: ${PORT}`);
+      if (mongoose.connection.readyState === 1) {
+         console.log('Successfully connected to MongoDB Atlas cluster');
+       } else {
+         console.error('Error connecting to MongoDB Atlas cluster', mongoose.connection.readyState);
+       }
+   }))
    .catch((error) => console.log(error));
 
-// mongoose.set('useFindAndModify', false);
+// mongoose.set('bufferCommands', false);
